@@ -8,8 +8,20 @@ import ProjectsSection from "./components/ProjectsSection";
 
 export default function Portfolio() {
   return (
-    <div className="bg-black flex flex-row justify-center w-full">
-      <div className="bg-black w-full max-w-[1280px] relative">
+    <div className="bg-black flex flex-row justify-center w-full relative">
+      <img
+        src="/ibero.png"
+        alt="Ibero Logo"
+        className="hidden md:block fixed left-10 top-1/2 -translate-y-1/2 h-[300px] w-auto z-10"
+        style={{ objectFit: "contain" }}
+      />
+      <img
+        src="/ibero.png"
+        alt="Ibero Logo"
+        className="hidden md:block fixed right-10 top-1/2 -translate-y-1/2 h-[300px] w-auto z-10"
+        style={{ objectFit: "contain" }}
+      />
+      <div className="bg-black w-full max-w-[1280px] relative z-20">
         <div>
           <section className="w-full" id="header"><HeaderSection /></section>
           <section className="w-full" id="about"><AboutSection /></section>
